@@ -1,0 +1,124 @@
+
+.sales-details form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form .single-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+form .single-row .input-area{
+    width: 48%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+form .single-row .input-area label{
+    color: #444;
+}
+form .single-row input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+form .single-row input:focus{
+    border: 1px solid #0d84e6;
+    box-shadow: 0px 0px 3px #0d84e6;
+}
+form .single-row .other{
+    display: flex;
+    background-color: #218aec;
+    align-items: center;
+    padding: 5px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 3px;
+    /* text-align: center;
+    justify-content: center;
+    align-items: center; */
+}
+.recent-sales .sales-details form .single-row .other p{
+    margin: 0;
+    color: #fff;
+    user-select: none;
+    margin-top: 0;
+}
+form .single-row .other i{
+    margin-left: 10px;
+    margin-top: -10px;
+    font-size: 25px;
+    color: #fff;
+    user-select: none;
+}
+form .other-item{
+    padding-top: 10px;
+    flex-direction: column;
+    display: none;
+    margin-bottom: 10px;
+}
+form .showtoogle{
+    display: flex;
+}
+form .other-item .single-row .item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 10px; */
+    padding: 10px;
+}
+form .other-item .single-row .item{
+    background-color: #ddd;
+    margin-bottom: 5px;
+}
+/* removing arrow of number type input */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.sales-details form button{
+    margin-top: 10px;
+    width: 130px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    background-color: #17b902;
+    color: #fff;
+    cursor: pointer;
+}
+.sales-details form button:hover{
+    background-color: #149403;
+    transition: all .3s ease;
+}
+
+@media(max-width:700px){
+    .home-content .sales-boxes .recent-sales{
+        padding: 20px 5px;
+    }
+    .sales-details{
+        width: 100%;
+        max-width: 100%;
+    }
+    .sales-details form .single-row{
+        flex-direction: column;
+    }
+    .sales-details form .single-row .input-area{
+        width: 100%;
+        padding-right: 5px;
+    }
+    .sales-details form .single-row input{
+        width: 100%;
+    }
+}

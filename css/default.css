@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    position: relative;
+}
+body .msgtoast{
+    position: fixed;
+    z-index: 999999;
+    background-color: rgb(29, 170, 1);
+    bottom: 30px;
+    left: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body .msgtoast p{
+    margin: 0;
+}
+body .toasterror{
+    background-color: #ff4242;
+}
+body .toasterror p{
+    color: #ff0000;
+}
+body .msgtoast p{
+    color: #000;
+}
+body .msgtoast i{
+    margin: 0 10px 0 20px;
+    font-size: 20px;
+    color: #000;
+    cursor: pointer;
+}

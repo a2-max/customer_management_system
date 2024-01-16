@@ -1,0 +1,154 @@
+.home-content .sales-boxes .recent-sales .sales-details{
+ flex-direction: column;
+}
+.home-content .sales-boxes .recent-sales .sales-details p{
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 30px;
+}
+.home-content .sales-boxes .recent-sales .sales-details .date-area{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-right: none;
+  background-color: #043df818;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+ }
+ @media (max-width: 500px) {
+  .home-content .sales-boxes .recent-sales .sales-details .date-area{
+    justify-content: flex-start;
+  }
+ }
+ .home-content .sales-boxes .recent-sales .sales-details .date-area a button,
+ .home-content .sales-boxes .recent-sales .sales-details .date-area button{
+   border: none;
+   outline: none;
+   background-color: #25aa0a;
+   color: #fff;
+   border-radius: 3px;
+   padding: 3px 10px;
+   margin-left: 10px;
+   position: absolute;
+   right: 90px;
+ }
+ .home-content .sales-boxes .recent-sales .sales-details .date-area a button:hover{
+   background-color: #177704;
+ }
+ .home-content .sales-boxes .recent-sales .sales-details .date-area .delete-btn{
+   background-color: #f73636;
+   right: 10px;
+ }
+ .home-content .sales-boxes .recent-sales .sales-details .date-area .delete-btn:hover{
+  background-color: #d31f1f;
+}
+.home-content .sales-boxes .recent-sales .sales-details .date-area .modal .modal-dialog .modal-footer a button{
+  position: relative;
+  right: 0;
+  background-color: #f73636;
+}
+ .home-content .sales-boxes .recent-sales .sales-details .date-area p{
+   margin: 0;
+   font-weight: 600;
+ }
+.home-content .sales-boxes .recent-sales .customer-info{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* border-bottom: 1px solid #ddd; */
+}
+.home-content .sales-boxes .recent-sales .customer-info .info-row{
+  display: flex;
+  justify-content: space-between;
+}
+.home-content .sales-boxes .recent-sales .customer-info .info-row p{
+  font-weight: 600;
+}
+.home-content .sales-boxes .recent-sales .customer-info .info-row p span{
+  font-weight: 400;
+}
+
+@media (max-width:750px) {
+  .home-content .sales-boxes .recent-sales .customer-info .info-row{
+    flex-direction: column;
+  }
+}
+
+ /* top buttons */
+ .home-content .sales-boxes .recent-sales .buttons{
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .home-content .sales-boxes .recent-sales .buttons a,
+ .home-content .sales-boxes .recent-sales .buttons button{
+   margin-right: 5px;
+   color: #fff;
+   text-decoration: none;
+   padding: 5px;
+   border-radius: 3px;
+   margin-bottom: 10px;
+ }
+ .home-content .sales-boxes .recent-sales .buttons .edit{
+   background-color: #25aa0a;
+   padding: 5px 20px;
+ }
+ .home-content .sales-boxes .recent-sales .buttons .edit:hover{
+  background-color: #1d8607;
+  padding: 5px 20px;
+}
+ .home-content .sales-boxes .recent-sales .buttons .delete{
+  background-color: #eb592d;
+}
+.home-content .sales-boxes .recent-sales .buttons .delete:hover{
+  background-color: #c9380c;
+}
+.home-content .sales-boxes .recent-sales .buttons .add-record{
+  background-color: #1e72df;
+}
+.home-content .sales-boxes .recent-sales .buttons .add-record:hover{
+  background-color: #125bbb;
+}
+
+/* .home-content .sales-boxes .recent-sales .sales-details{
+    max-height: 400px;
+    overflow-y: auto;
+} */
+.home-content .sales-boxes .recent-sales .sales-details table thead{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
+.home-content .sales-boxes .recent-sales .sales-details table tbody tr td a .fa-trash-alt{
+    color: #fa0000;
+}
+/* delete icon hover */
+.home-content .sales-boxes .recent-sales .sales-details table tbody tr td a .fa-trash-alt:hover{
+    color: #d10505;
+}
+.home-content .sales-boxes .recent-sales .sales-details::-webkit-scrollbar {
+    width: 3px;
+    height: 5px;
+  }
+  
+  /* Track */
+  .home-content .sales-boxes .recent-sales .sales-details::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .home-content .sales-boxes .recent-sales .sales-details::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  .home-content .sales-boxes .recent-sales .sales-details::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  
